@@ -1,0 +1,232 @@
+[
+  {
+    "date": "2026-01-01",
+    "name": "New Year's Day",
+    "type": "Holiday"
+  },
+  {
+    "date": "2026-01-03",
+    "name": "Arudra Darshanam",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-01-14",
+    "name": "Bhogi Festival",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-01-15",
+    "name": "Thai Pongal",
+    "type": "Major Festival"
+  },
+  {
+    "date": "2026-01-16",
+    "name": "Maattu Pongal",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-01-16",
+    "name": "Thiruvalluvar Day",
+    "type": "Holiday"
+  },
+  {
+    "date": "2026-01-17",
+    "name": "Uzhavar Thirunal",
+    "type": "Holiday"
+  },
+  {
+    "date": "2026-01-18",
+    "name": "Thai Amavasai",
+    "type": "Religious"
+  },
+  {
+    "date": "2026-01-25",
+    "name": "Ratha Sapthami",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-01-26",
+    "name": "Republic Day",
+    "type": "National Holiday"
+  },
+  {
+    "date": "2026-02-01",
+    "name": "Thai Poosam",
+    "type": "Major Festival"
+  },
+  {
+    "date": "2026-02-15",
+    "name": "Maha Shivaratri",
+    "type": "Major Festival"
+  },
+  {
+    "date": "2026-03-02",
+    "name": "Maasi Magam",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-03-03",
+    "name": "Holi",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-03-14",
+    "name": "Karadaiyan Nombu",
+    "type": "Religious"
+  },
+  {
+    "date": "2026-03-19",
+    "name": "Ugadi",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-03-27",
+    "name": "Rama Navami",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-04-01",
+    "name": "Panguni Uthiram",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-04-14",
+    "name": "Tamil New Year",
+    "type": "Major Festival"
+  },
+  {
+    "date": "2026-04-14",
+    "name": "Dr. Ambedkar Jayanti",
+    "type": "National Holiday"
+  },
+  {
+    "date": "2026-04-20",
+    "name": "Akshaya Tritiya",
+    "type": "Auspicious"
+  },
+  {
+    "date": "2026-04-28",
+    "name": "Meenakshi Thirukalyanam",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-05-01",
+    "name": "May Day",
+    "type": "Holiday"
+  },
+  {
+    "date": "2026-05-01",
+    "name": "Chitra Pournami",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-05-30",
+    "name": "Vaikasi Visakam",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-06-22",
+    "name": "Aani Uthiram",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-08-03",
+    "name": "Aadi Perukku",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-08-14",
+    "name": "Aadi Pooram",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-08-15",
+    "name": "Independence Day",
+    "type": "National Holiday"
+  },
+  {
+    "date": "2026-08-21",
+    "name": "Varalakshmi Viratham",
+    "type": "Religious"
+  },
+  {
+    "date": "2026-08-26",
+    "name": "Onam",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-08-27",
+    "name": "Avani Avittam",
+    "type": "Religious"
+  },
+  {
+    "date": "2026-09-04",
+    "name": "Gokulashtami",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-09-14",
+    "name": "Vinayagar Chaturthi",
+    "type": "Major Festival"
+  },
+  {
+    "date": "2026-10-02",
+    "name": "Gandhi Jayanti",
+    "type": "National Holiday"
+  },
+  {
+    "date": "2026-10-10",
+    "name": "Mahalaya Amavasai",
+    "type": "Religious"
+  },
+  {
+    "date": "2026-10-11",
+    "name": "Navaratri Begins",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-10-19",
+    "name": "Saraswati Puja",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-10-20",
+    "name": "Vijaya Dasami",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-11-08",
+    "name": "Deepavali",
+    "type": "Major Festival"
+  },
+  {
+    "date": "2026-11-10",
+    "name": "Kanda Sashti Begins",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-11-15",
+    "name": "Soora Samharam",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-11-24",
+    "name": "Karthigai Deepam",
+    "type": "Major Festival"
+  },
+  {
+    "date": "2026-12-20",
+    "name": "Vaikunta Ekadasi",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-12-24",
+    "name": "Arudra Darshanam",
+    "type": "Festival"
+  },
+  {
+    "date": "2026-12-25",
+    "name": "Christmas",
+    "type": "Holiday"
+  }
+]

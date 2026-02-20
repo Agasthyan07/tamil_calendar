@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #fffdf5;
+  /* Creamy white */
+  --foreground: #2d0a0a;
+  /* Dark maroon-black text */
+  --maroon-50: #fcf4f4;
+  --maroon-100: #fae8e8;
+  --maroon-200: #f5d0d0;
+  --maroon-300: #edaaaa;
+  --maroon-400: #e37676;
+  --maroon-500: #d54949;
+  --maroon-600: #c02d2d;
+  --maroon-700: #9f1e1e;
+  /* Primary Maroon */
+  --maroon-800: #851d1d;
+  --maroon-900: #7b1e1e;
+  /* Deep Maroon */
+
+  --gold-50: #fffdf0;
+  --gold-100: #fffac2;
+  --gold-200: #fff485;
+  --gold-300: #ffe846;
+  --gold-400: #ffd700;
+  /* Gold */
+  --gold-500: #eec100;
+  --gold-600: #c69600;
+  --gold-700: #9f7004;
+
+  --pattern-color: rgba(123, 30, 30, 0.03);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-maroon-50: var(--maroon-50);
+  --color-maroon-100: var(--maroon-100);
+  --color-maroon-200: var(--maroon-200);
+  --color-maroon-300: var(--maroon-300);
+  --color-maroon-400: var(--maroon-400);
+  --color-maroon-500: var(--maroon-500);
+  --color-maroon-600: var(--maroon-600);
+  --color-maroon-700: var(--maroon-700);
+  --color-maroon-800: var(--maroon-800);
+  --color-maroon-900: var(--maroon-900);
+
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: #9f7004;
+  --color-gold-900: #6b4a00;
+
+  --color-maroon-950: #1a0505;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-tamil: 'Noto Sans Tamil', sans-serif;
+}
+
+/* Selector strategy for dark mode (Next-themes adds 'dark' class) */
+.dark {
+  --background: #1a0505;
+  /* Very dark maroon-black */
+  --foreground: #f5e8e8;
+
+  /* Dark mode maroon scale — NOT inverted, just shifted for dark backgrounds */
+  /* Low numbers = subtle/muted, High numbers = rich/vivid — same direction as light mode */
+  --maroon-50: #fae8e8;
+  --maroon-100: #f5d0d0;
+  --maroon-200: #edaaaa;
+  --maroon-300: #e37676;
+  --maroon-400: #d54949;
+  --maroon-500: #c02d2d;
+  --maroon-600: #9f1e1e;
+  --maroon-700: #851d1d;
+  --maroon-800: #420e0e;
+  --maroon-900: #2a0a0a;
+  --maroon-950: #1a0505;
+
+  /* Gold overrides for dark mode */
+  --gold-50: #3d3000;
+  --gold-100: #5c4800;
+  --gold-200: #7a6200;
+  --gold-300: #c69600;
+  --gold-400: #ffd700;
+  --gold-500: #ffe846;
+  --gold-600: #fff485;
+  --gold-700: #fffac2;
+
+  --pattern-color: rgba(255, 215, 0, 0.05);
+  /* Gold pattern in dark mode */
+}
+
+/* Make bg-white sections adapt to dark mode */
+.dark .bg-white {
+  background-color: var(--maroon-900) !important;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  background-image: radial-gradient(var(--pattern-color) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

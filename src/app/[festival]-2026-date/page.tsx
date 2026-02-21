@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ festival:
         title: `${festival.name} 2026 Date - Tamil Calendar 2026 Festival Timing`,
         description: `When is ${festival.name} in 2026? Check exact date, timing, and significance of ${festival.name} 2026 according to Tamil Calendar.`,
         alternates: {
-            canonical: `https://tamil-calendar-2026.vercel.app/${festivalSlug}-2026-date`,
+            canonical: `https://tamildailycalendar.vercel.app/${festivalSlug}-2026-date`,
         },
     };
 }

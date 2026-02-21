@@ -18,7 +18,7 @@ const monthImageFilenames: Record<string, string> = {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://tamil-calendar-2026.vercel.app';
+    const baseUrl = 'https://tamildailycalendar.vercel.app';
 
     const routes = [
         '',

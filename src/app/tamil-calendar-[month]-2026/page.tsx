@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: { params: Promise<{ month: st
         title: `Tamil Calendar ${monthName} 2026 - Festivals, Muhurtham & Panchangam`,
         description: `Download Tamil Monthly Calendar for ${monthName} 2026. Check ${monthName} 2026 festivals, holidays, muhurtham dates, and daily panchangam details.`,
         alternates: {
-            canonical: `https://tamil-calendar-2026.vercel.app/tamil-calendar-${month}-2026`,
+            canonical: `https://tamildailycalendar.vercel.app/tamil-calendar-${month}-2026`,
         },
     };
 }

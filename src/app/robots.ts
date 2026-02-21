@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://tamil-calendar-2026.vercel.app';
+    const baseUrl = 'https://tamildailycalendar.vercel.app';
 
     return {
         rules: {

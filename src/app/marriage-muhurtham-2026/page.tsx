@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Marriage Muhurtham Dates 2026 - Tamil Calendar Subha Muhurtham",
     description: "Find the best Marriage Muhurtham dates in 2026. Check 2026 Tamil Calendar Subha Muhurtham dates and auspicious timings for weddings.",
     alternates: {
-        canonical: "https://tamil-calendar-2026.vercel.app/marriage-muhurtham-2026",
+        canonical: "https://tamildailycalendar.vercel.app/marriage-muhurtham-2026",
     },
 };
 

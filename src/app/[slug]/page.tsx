@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             title: `Tamil Calendar ${monthName} 2026 - Festivals, Muhurtham & Panchangam`,
             description: `Download Tamil Monthly Calendar for ${monthName} 2026. Check ${monthName} 2026 festivals, holidays, muhurtham dates, and daily panchangam details.`,
             alternates: {
-                canonical: `https://tamil-calendar-2026.vercel.app/${slug}`,
+                canonical: `https://tamildailycalendar.vercel.app/${slug}`,
             },
         };
     }
@@ -86,7 +86,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
                 title: `${festival.name} 2026 Date - Tamil Calendar 2026 Festival Timing`,
                 description: `When is ${festival.name} in 2026? Check exact date, timing, and significance of ${festival.name} 2026 according to Tamil Calendar.`,
                 alternates: {
-                    canonical: `https://tamil-calendar-2026.vercel.app/${slug}`,
+                    canonical: `https://tamildailycalendar.vercel.app/${slug}`,
                 },
             };
         }

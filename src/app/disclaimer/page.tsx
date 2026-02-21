@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Disclaimer",
     description: "Disclaimer for Tamil Monthly Calendar 2026. Read our limitations, accuracy notice, and terms of use for the Tamil calendar information provided.",
-    alternates: { canonical: "https://tamil-calendar-2026.vercel.app/disclaimer" },
+    alternates: { canonical: "https://tamildailycalendar.vercel.app/disclaimer" },
 };
 
 export default function DisclaimerPage() {
@@ -22,8 +22,8 @@ export default function DisclaimerPage() {
                         <h2 className="mb-3 text-xl font-bold text-maroon-900 dark:text-maroon-100">1. General Information Only</h2>
                         <p className="leading-relaxed">
                             The information provided on Tamil Monthly Calendar 2026 (
-                            <a href="https://tamil-calendar-2026.vercel.app" className="text-maroon-600 hover:underline dark:text-gold-400">
-                                tamil-calendar-2026.vercel.app
+                            <a href="https://tamildailycalendar.vercel.app" className="text-maroon-600 hover:underline dark:text-gold-400">
+                                tamildailycalendar.vercel.app
                             </a>
                             ) is for general informational and cultural purposes only. All information on the site is
                             provided in good faith based on traditional Tamil calendar systems and publicly available
@@ -67,11 +67,11 @@ export default function DisclaimerPage() {
                     </section>
 
                     <section>
-                        <h2 className="mb-3 text-xl font-bold text-maroon-900 dark:text-maroon-100">5. External Links</h2>
+                        <h2 className="mb-3 text-xl font-bold text-maroon-900 dark:text-maroon-100">5. External Links & Advertisements</h2>
                         <p className="leading-relaxed">
-                            Our website may contain links to external websites. We have no control over the content
-                            and nature of those sites. These links do not imply recommentation or endorsement of the
-                            views expressed on them.
+                            Our website may contain links to external websites and third-party advertisements (such as Google AdSense). We have no control over the content
+                            and nature of those external sites and ads. The inclusion of any links or advertisements does not necessarily imply a recommendation or endorse the
+                            views expressed within them. We are not responsible for any interactions or transactions you may have with external websites or advertisers.
                         </p>
                     </section>
 

@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Privacy Policy",
     description: "Privacy Policy for Tamil Monthly Calendar 2026. Learn how we collect, use, and protect your information.",
-    alternates: { canonical: "https://tamil-calendar-2026.vercel.app/privacy-policy" },
+    alternates: { canonical: "https://tamildailycalendar.vercel.app/privacy-policy" },
 };
 
 const lastUpdated = "February 20, 2026";
-const siteUrl = "https://tamil-calendar-2026.vercel.app";
+const siteUrl = "https://tamildailycalendar.vercel.app";
 
 export default function PrivacyPolicyPage() {
     return (
@@ -41,22 +41,21 @@ export default function PrivacyPolicyPage() {
                     </section>
 
                     <section>
-                        <h2 className="text-xl font-bold text-maroon-900 dark:text-maroon-100">3. Analytics & Cookies</h2>
+                        <h2 className="text-xl font-bold text-maroon-900 dark:text-maroon-100">3. Cookies and Web Beacons</h2>
                         <p>
-                            We may use privacy-friendly analytics tools (such as Vercel Analytics) to understand aggregate
-                            traffic patterns. These tools may collect anonymous data such as page views, browser type,
-                            and country. No personally identifiable information is collected or stored.
+                            Like any other website, Tamil Monthly Calendar 2026 uses cookies. These cookies are used to store information including visitors&apos; preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users&apos; experience by customizing our web page content based on visitors&apos; browser type and/or other information.
                         </p>
-                        <p>
-                            We use minimal cookies only for theme preference (light/dark mode). No tracking or advertising
-                            cookies are set.
+                        <p className="mt-4">
+                            <strong>Google DoubleClick DART Cookie:</strong><br />
+                            Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to our site and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads" className="text-maroon-600 hover:underline dark:text-gold-400" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a>.
                         </p>
                     </section>
 
                     <section>
-                        <h2 className="text-xl font-bold text-maroon-900 dark:text-maroon-100">4. Third-Party Services</h2>
-                        <p>Our website may use the following third-party services:</p>
-                        <ul className="list-disc pl-6 space-y-1 text-foreground/80">
+                        <h2 className="text-xl font-bold text-maroon-900 dark:text-maroon-100">4. Third-Party Privacy Policies</h2>
+                        <p>Our website may use the following third-party services and advertising partners:</p>
+                        <ul className="list-disc pl-6 space-y-2 text-foreground/80 mt-2">
+                            <li><strong>Google AdSense</strong> – Third party vendors, including Google, use cookies to serve ads based on a user&apos;s prior visits to your website or other websites. Google&apos;s use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet. Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" className="text-maroon-600 hover:underline dark:text-gold-400" target="_blank" rel="noopener noreferrer">Ads Settings</a>.</li>
                             <li><strong>Vercel</strong> – Hosting provider. Subject to <a href="https://vercel.com/legal/privacy-policy" className="text-maroon-600 hover:underline dark:text-gold-400" target="_blank" rel="noopener noreferrer">Vercel&apos;s Privacy Policy</a>.</li>
                             <li><strong>Google Fonts</strong> – For Tamil and Latin typography. Subject to <a href="https://policies.google.com/privacy" className="text-maroon-600 hover:underline dark:text-gold-400" target="_blank" rel="noopener noreferrer">Google&apos;s Privacy Policy</a>.</li>
                             <li><strong>Formspree</strong> – For processing contact form submissions. Subject to <a href="https://formspree.io/legal/privacy-policy" className="text-maroon-600 hover:underline dark:text-gold-400" target="_blank" rel="noopener noreferrer">Formspree&apos;s Privacy Policy</a>.</li>

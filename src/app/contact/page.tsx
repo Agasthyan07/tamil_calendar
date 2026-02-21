@@ -4,7 +4,7 @@ import { Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 export const metadata: Metadata = {
     title: "Contact Us",
     description: "Contact Tamil Monthly Calendar 2026 team for feedback, corrections, or suggestions about our Tamil calendar, festival dates, and muhurtham information.",
-    alternates: { canonical: "https://tamil-calendar-2026.vercel.app/contact" },
+    alternates: { canonical: "https://tamildailycalendar.vercel.app/contact" },
 };
 
 export default function ContactPage() {
@@ -35,8 +35,8 @@ export default function ContactPage() {
                                     <Mail className="mt-0.5 h-5 w-5 shrink-0 text-maroon-500" />
                                     <div>
                                         <p className="font-semibold text-maroon-900 dark:text-maroon-100">Email</p>
-                                        <a href="mailto:contact@tamil-calendar-2026.vercel.app" className="text-sm text-maroon-600 hover:underline dark:text-gold-400">
-                                            contact@tamil-calendar-2026.vercel.app
+                                        <a href="mailto:contact@tamildailycalendar.vercel.app" className="text-sm text-maroon-600 hover:underline dark:text-gold-400">
+                                            contact@tamildailycalendar.vercel.app
                                         </a>
                                     </div>
                                 </div>

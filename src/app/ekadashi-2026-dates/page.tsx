@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Ekadashi 2026 Dates - Tamil Calendar 2026 Vaikunta Ekadashi",
     description: "List of all Ekadashi dates in 2026. Check Vaikunta Ekadashi 2026 date and importance of Ekadashi fasting according to Tamil Calendar.",
     alternates: {
-        canonical: "https://tamil-calendar-2026.vercel.app/ekadashi-2026-dates",
+        canonical: "https://tamildailycalendar.vercel.app/ekadashi-2026-dates",
     },
 };
 

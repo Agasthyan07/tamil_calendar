@@ -5,7 +5,7 @@ import { Calendar, BookOpen, Heart, Globe } from "lucide-react";
 export const metadata: Metadata = {
     title: "About Us",
     description: "Learn about Tamil Monthly Calendar 2026 – a free resource for Tamil festivals, muhurtham dates, ekadashi, and the complete Tamil panchangam for 2026.",
-    alternates: { canonical: "https://tamil-calendar-2026.vercel.app/about" },
+    alternates: { canonical: "https://tamildailycalendar.vercel.app/about" },
 };
 
 export default function AboutPage() {
@@ -26,18 +26,30 @@ export default function AboutPage() {
                     </p>
                 </div>
 
-                {/* Mission */}
-                <div className="mb-12 rounded-2xl bg-maroon-50 p-8 dark:bg-maroon-900/20">
-                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-maroon-900 dark:text-maroon-100">
-                        <Heart className="h-6 w-6 text-maroon-500" />
-                        Our Mission
-                    </h2>
-                    <p className="text-lg leading-relaxed text-foreground/80">
-                        We are dedicated to providing accurate, free, and easy-to-use Tamil calendar information
-                        for the Tamil community worldwide. Our platform brings together traditional Tamil
-                        panchangam knowledge with modern web accessibility — making it simple to check
-                        festivals, muhurtham dates, ekadashi, and daily auspicious timings from any device.
-                    </p>
+                {/* Mission & Who We Are */}
+                <div className="mb-12 grid gap-6 md:grid-cols-2">
+                    <div className="rounded-2xl bg-maroon-50 p-8 dark:bg-maroon-900/20">
+                        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-maroon-900 dark:text-maroon-100">
+                            <Heart className="h-6 w-6 text-maroon-500" />
+                            Our Mission
+                        </h2>
+                        <p className="text-lg leading-relaxed text-foreground/80">
+                            We are dedicated to providing accurate, free, and easy-to-use Tamil calendar information
+                            for the Tamil community worldwide. Our platform brings together traditional Tamil
+                            panchangam knowledge with modern web accessibility.
+                        </p>
+                    </div>
+                    <div className="rounded-2xl bg-maroon-50 p-8 dark:bg-maroon-900/20">
+                        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-maroon-900 dark:text-maroon-100">
+                            <Globe className="h-6 w-6 text-maroon-500" />
+                            Who We Are
+                        </h2>
+                        <p className="text-lg leading-relaxed text-foreground/80">
+                            We are an independent team passionate about preserving and sharing Tamil cultural heritage.
+                            Our goal is to make essential dates—like muhurthams, ekadashi, and festivals—accessible
+                            to everyone, everywhere, entirely for free.
+                        </p>
+                    </div>
                 </div>
 
                 {/* What We Offer */}

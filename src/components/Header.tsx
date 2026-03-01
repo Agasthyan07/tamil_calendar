@@ -22,6 +22,7 @@ export default function Header() {
         { name: "Festivals", href: "/#festivals" },
         { name: "Ekadashi", href: "/ekadashi-2026-dates" },
         { name: "Muhurtham", href: "/marriage-muhurtham-2026" },
+        { name: "Nalla Neram", href: "/today-nalla-neram" },
     ];
 
     return (

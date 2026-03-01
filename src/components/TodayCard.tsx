@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Sun, Star, Calendar, Clock, ArrowRight, Sparkles } from "lucide-react";
+import { getPanchangamForDay } from "@/lib/panchangam";
 
 interface TodayData {
     day: number;
@@ -81,6 +82,7 @@ export default function TodayCard({ todayData }: TodayCardProps) {
     const tamilDayName = tamilDayNames[dayOfWeek] ?? "";
     const tamilMonthName = tamilMonthNames[tamilMonth] ?? tamilMonth;
     const monthUrl = `/tamil-calendar-${monthNameEn.toLowerCase()}-2026`;
+    const panchangam = getPanchangamForDay(dayOfWeek);
 
     // Build status badges
     const badges: { label: string; icon: React.ReactNode; color: string }[] = [];
@@ -137,9 +139,26 @@ export default function TodayCard({ todayData }: TodayCardProps) {
                                     ))}
                                 </div>
                             )}
-                            {badges.length === 0 && !festival && (
-                                <span className="text-sm text-white/50 italic">No special observances today</span>
-                            )}
+
+                            {/* Panchangam Timings */}
+                            <div className="mt-2 grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-white/80">
+                                <div className="flex flex-col">
+                                    <span className="text-xs text-maroon-300 font-medium">Nalla Neram</span>
+                                    <span className="font-semibold text-white">{panchangam?.nallaNeram}</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-xs text-maroon-300 font-medium">Gowri Nalla Neram</span>
+                                    <span className="font-semibold text-white">{panchangam?.gowriNallaNeram}</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-xs text-maroon-300 font-medium">Rahu Kalam</span>
+                                    <span className="font-semibold text-white">{panchangam?.rahuKalam}</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-xs text-maroon-300 font-medium">Yamagandam</span>
+                                    <span className="font-semibold text-white">{panchangam?.yamagandam}</span>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Right: CTA */}

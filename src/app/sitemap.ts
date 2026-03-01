@@ -23,6 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const routes = [
         '',
         '/ekadashi-2026-dates',
+        '/amavasai-2026-dates',
+        '/pournami-2026-dates',
+        '/pradosham-2026-dates',
         '/marriage-muhurtham-2026',
         '/about',
         '/contact',

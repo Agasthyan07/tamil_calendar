@@ -42,13 +42,13 @@ export default function Home() {
             Year 2026 • 2026 • வருடம் 2026
           </span>
           <h1 className="mb-6 text-4xl font-bold leading-tight md:text-6xl font-tamil">
-            Tamil Monthly Calendar 2026
+            Tamil Calendar 2026 Download
             <span className="block mt-2 text-2xl md:text-4xl text-maroon-200">
               தமிழ் மாத காலண்டர் 2026
             </span>
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-maroon-100 md:text-xl">
-            Free PDF Download | Festivals, Muhurtham, Holidays, and Rasipalan.
+            Free PDF Tamil Calendar 2026 Download | Festivals, Muhurtham, Holidays, and Rasipalan.
             Your complete guide to the Tamil year.
           </p>
 
@@ -56,6 +56,8 @@ export default function Home() {
             <a
               href="/2026/tamil-calendar-2026.pdf"
               download="Tamil-Calendar-2026.pdf"
+              title="Tamil Calendar 2026 Download PDF"
+              aria-label="Tamil Calendar 2026 Download PDF"
               className="flex w-full items-center justify-center gap-2 rounded-xl bg-gold-500 px-8 py-4 text-base font-bold text-maroon-950 shadow-lg transition-transform hover:scale-105 hover:bg-gold-400 sm:w-auto"
             >
               <Download className="h-5 w-5" />
@@ -201,6 +203,36 @@ export default function Home() {
                 </table>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fasting & Auspicious Days Links */}
+      <section className="bg-maroon-50/50 py-16 dark:bg-maroon-900/5 md:py-24">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <SectionHeading title="Fasting & Auspicious Days 2026" subtitle="விரத நாட்கள் 2026" centered />
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { title: "Amavasai Dates", tamil: "அமாவாசை", href: "/amavasai-2026-dates", icon: "🌑", color: "bg-stone-100 text-stone-800 dark:bg-stone-900/50 dark:text-stone-300" },
+              { title: "Pournami Dates", tamil: "பௌர்ணமி", href: "/pournami-2026-dates", icon: "🌕", color: "bg-amber-100 text-amber-800 dark:bg-yellow-900/50 dark:text-yellow-300" },
+              { title: "Pradosham Dates", tamil: "பிரதோஷம்", href: "/pradosham-2026-dates", icon: "✨", color: "bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-300" },
+              { title: "Ekadashi Dates", tamil: "ஏகாதசி", href: "/ekadashi-2026-dates", icon: "⭐", color: "bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-300" },
+            ].map((item, idx) => (
+              <Link
+                key={idx}
+                href={item.href}
+                className={`group flex flex-col items-center gap-3 rounded-2xl border border-white p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-white/5 ${item.color}`}
+              >
+                <div className="text-3xl mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-white/50 backdrop-blur-sm shadow-sm dark:bg-black/20">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">{item.title}</h3>
+                  <p className="font-tamil text-sm opacity-80 mt-1">{item.tamil}</p>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

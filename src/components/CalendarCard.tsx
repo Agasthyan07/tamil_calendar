@@ -51,8 +51,10 @@ export default function CalendarCard({
 
     return (
         <div className="group relative overflow-hidden rounded-2xl border border-maroon-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-maroon-800 dark:bg-maroon-900/20">
+            <Link href={monthUrl} className="absolute inset-0 z-0" aria-label={`View ${monthNameEn} Calendar`} />
+
             {/* Month preview image */}
-            <div className="relative h-40 w-full overflow-hidden">
+            <div className="relative h-40 w-full overflow-hidden pointer-events-none">
                 <Image
                     src={imageSrc}
                     alt={`Tamil Calendar ${monthNameEn} 2026`}
@@ -74,21 +76,20 @@ export default function CalendarCard({
             </div>
 
             {/* Card body */}
-            <div className="p-4">
+            <div className="p-4 relative pointer-events-none">
                 <span className="text-xs font-semibold uppercase tracking-wider text-maroon-500 dark:text-gold-400">
                     {year} • தமிழ் காலண்டர்
                 </span>
                 <div className="mt-4 flex gap-3">
-                    <Link
-                        href={monthUrl}
-                        className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-maroon-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-maroon-800 dark:bg-maroon-700 dark:hover:bg-maroon-600"
+                    <span
+                        className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-maroon-900 px-4 py-2 text-sm font-medium text-white transition-colors group-hover:bg-maroon-800 dark:bg-maroon-700 dark:group-hover:bg-maroon-600 pointer-events-auto"
                     >
                         View <ArrowRight className="h-4 w-4" />
-                    </Link>
+                    </span>
                     <a
                         href={imageSrc}
                         download={`Tamil-Calendar-2026-${monthNameEn}.png`}
-                        className="flex items-center justify-center rounded-lg border border-maroon-200 bg-transparent px-3 py-2 text-maroon-700 transition-colors hover:bg-maroon-50 dark:border-maroon-700 dark:text-gold-300 dark:hover:bg-maroon-800"
+                        className="relative z-10 flex items-center justify-center rounded-lg border border-maroon-200 bg-white px-3 py-2 text-maroon-700 transition-colors hover:bg-maroon-50 dark:border-maroon-700 dark:text-gold-300 dark:bg-maroon-900 dark:hover:bg-maroon-800 pointer-events-auto"
                         aria-label={`Download Tamil Calendar ${monthNameEn} 2026 image`}
                     >
                         <Download className="h-4 w-4" />

@@ -62,8 +62,8 @@ export async function generateMetadata({ params }: { params: Promise<{ month: st
 
     const monthName = month.charAt(0).toUpperCase() + month.slice(1);
     return {
-        title: `Tamil Calendar ${monthName} 2026 - Festivals, Muhurtham & Panchangam`,
-        description: `Download Tamil Monthly Calendar for ${monthName} 2026. Check ${monthName} 2026 festivals, holidays, muhurtham dates, and daily panchangam details.`,
+        title: `Tamil Calendar ${monthName} 2026 Download - Festivals & Panchangam`,
+        description: `Tamil Calendar 2026 Download for ${monthName} 2026. Check ${monthName} 2026 festivals, holidays, muhurtham dates, and daily panchangam details.`,
         alternates: {
             canonical: `https://tamildailycalendar.vercel.app/tamil-calendar-${month}-2026`,
         },
@@ -151,7 +151,7 @@ export default async function MonthPage({ params }: { params: Promise<{ month: s
                     <div className="relative w-full" style={{ aspectRatio: '4/3' }}>
                         <Image
                             src={`/2026/monthly-calander-image/${monthImageFilenames[monthIndex]}`}
-                            alt={`Tamil Calendar ${months[monthIndex]} 2026 - Download Free`}
+                            alt={`Tamil Calendar ${months[monthIndex]} 2026 Download`}
                             fill
                             className="object-contain"
                             priority
@@ -165,6 +165,8 @@ export default async function MonthPage({ params }: { params: Promise<{ month: s
                         <a
                             href={`/2026/monthly-calander-image/${monthImageFilenames[monthIndex]}`}
                             download={`Tamil-Calendar-2026-${months[monthIndex]}.png`}
+                            title={`Tamil Calendar ${months[monthIndex]} 2026 Download`}
+                            aria-label={`Tamil Calendar ${months[monthIndex]} 2026 Download`}
                             className="flex items-center gap-2 rounded-full bg-maroon-900 px-6 py-2 text-sm font-semibold text-white shadow-md transition-transform hover:scale-105 hover:bg-maroon-800 dark:bg-maroon-700"
                         >
                             <Download className="h-4 w-4" />

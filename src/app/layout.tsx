@@ -23,13 +23,13 @@ const notoSansTamil = Noto_Sans_Tamil({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Tamil Monthly Calendar 2026",
-    default: "Tamil Monthly Calendar 2026 – Free PDF Download",
+    template: "%s | Tamil Calendar 2026 Download",
+    default: "Tamil Calendar 2026 Download – Free PDF & Monthly View",
   },
-  description: "Download Tamil Monthly Calendar 2026 PDF. Check detailed festivals, muhurtham, ekadashi, and holidays for 2026. Daily calendar info.",
+  description: "Tamil Calendar 2026 Download for free in PDF format. Check detailed festivals, muhurtham, ekadashi, and holidays for 2026. Daily calendar info.",
   openGraph: {
-    title: "Tamil Monthly Calendar 2026",
-    description: "Detailed Tamil Calendar 2026 with Festivals, Muhurtham, and Ekadashi dates.",
+    title: "Tamil Calendar 2026 Download",
+    description: "Tamil Calendar 2026 Download. Detailed Tamil Calendar 2026 with Festivals, Muhurtham, and Ekadashi dates.",
     type: "website",
     locale: "ta_IN",
   },

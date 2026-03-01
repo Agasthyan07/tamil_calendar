@@ -77,6 +77,18 @@ export const getMuhurthamDates = (): Muhurtham[] => {
     return readJson('muhurtham-2026.json') as Muhurtham[];
 };
 
+export const getAmavasaiDates = () => {
+    return readJson('amavasai-2026.json') as { date: string, name: string }[];
+};
+
+export const getPournamiDates = () => {
+    return readJson('pournami-2026.json') as { date: string, name: string }[];
+};
+
+export const getPradoshamDates = () => {
+    return readJson('pradosham-2026.json') as { date: string, name: string }[];
+};
+
 export const getMonthData = (monthIndex: number): MonthData | undefined => {
     const calendarData = getCalendarData();
     return calendarData?.months?.find(m => m.monthIndex === monthIndex);

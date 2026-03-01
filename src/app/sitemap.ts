@@ -22,6 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const routes = [
         '',
+        '/today-nalla-neram',
+        '/tamil-daily-calendar-today',
+        '/tamil-calendar-tomorrow',
         '/ekadashi-2026-dates',
         '/amavasai-2026-dates',
         '/pournami-2026-dates',

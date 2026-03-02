@@ -5,6 +5,8 @@ import { getCalendarData } from '@/lib/data';
 import { getPanchangamForDay } from '@/lib/panchangam';
 import SectionHeading from '@/components/SectionHeading';
 
+export const revalidate = 300;
+
 // Calculate tomorrow's IST date at build/request time
 const getTomorrowIST = () => {
     return new Date(Date.now() + 5.5 * 60 * 60 * 1000 + 24 * 60 * 60 * 1000);

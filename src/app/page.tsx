@@ -5,6 +5,8 @@ import CalendarCard from "@/components/CalendarCard";
 import TodayCard from "@/components/TodayCard";
 import { getFestivals, getEkadashiDates, getMuhurthamDates, getCalendarData } from "@/lib/data";
 
+export const revalidate = 300; // ISR: revalidate every 5 mins to keep "Today" accurate
+
 export default function Home() {
   const festivals = getFestivals() || [];
   const ekadashi = (getEkadashiDates() || []).slice(0, 5); // Show first 5

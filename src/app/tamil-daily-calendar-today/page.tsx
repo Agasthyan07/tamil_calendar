@@ -5,6 +5,8 @@ import { getCalendarData } from '@/lib/data';
 import { getPanchangamForDay } from '@/lib/panchangam';
 import SectionHeading from '@/components/SectionHeading';
 
+export const revalidate = 300;
+
 export async function generateMetadata(): Promise<Metadata> {
     const nowIST = new Date(Date.now() + 5.5 * 60 * 60 * 1000);
     const formattedDate = nowIST.toLocaleDateString("en-US", {

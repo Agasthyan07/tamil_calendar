@@ -133,51 +133,108 @@ export default function TamilDailyCalendarTodayPage() {
                             </div>
                         )}
 
-                        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-                            {/* Astrological Info */}
-                            <div>
-                                <h3 className="text-lg font-bold text-maroon-900 dark:text-maroon-100 flex items-center gap-2 border-b border-maroon-100 dark:border-maroon-900/50 pb-3 mb-4">
-                                    <Info className="h-5 w-5 text-maroon-500" />
-                                    Astrological Details
-                                </h3>
+                        {/* Astrological & Panchangam Info */}
+                        <div className="md:col-span-2">
+                            <h3 className="text-xl font-bold text-maroon-900 dark:text-maroon-100 flex items-center gap-2 border-b-2 border-maroon-200 dark:border-maroon-800 pb-3 mb-6">
+                                <Star className="h-6 w-6 text-maroon-600 dark:text-gold-400" />
+                                Today's Panchangam Details
+                            </h3>
+
+                            <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                                {/* Left Column */}
                                 <div className="space-y-4">
-                                    <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-800">
-                                        <span className="text-foreground/70 font-medium">Tithi</span>
-                                        <span className="font-semibold text-foreground">Check Local Almanac</span>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold mb-1 sm:mb-0">நல்ல நேரம் (Nalla Neram)</span>
+                                        <span className="font-bold text-green-700 dark:text-green-400 text-right">{panchangam?.nallaNeram || "N/A"}</span>
                                     </div>
-                                    <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-800">
-                                        <span className="text-foreground/70 font-medium">Nakshatram (Star)</span>
-                                        <span className="font-semibold text-foreground">Check Local Almanac</span>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold mb-1 sm:mb-0">கௌரி நல்ல நேரம் (Gowri)</span>
+                                        <span className="font-bold text-green-700 dark:text-green-400 text-right">{panchangam?.gowriNallaNeram || "N/A"}</span>
                                     </div>
-                                    <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-800">
-                                        <span className="text-foreground/70 font-medium">Rasi (Moon Sign)</span>
-                                        <span className="font-semibold text-foreground">Check Local Almanac</span>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold mb-1 sm:mb-0">இராகு காலம் (Rahu Kalam)</span>
+                                        <span className="font-bold text-red-700 dark:text-red-400 text-right">{panchangam?.rahuKalam || "N/A"}</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold mb-1 sm:mb-0">எமகண்டம் (Yamagandam)</span>
+                                        <span className="font-bold text-red-700 dark:text-red-400 text-right">{panchangam?.yamagandam || "N/A"}</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold mb-1 sm:mb-0">குளிகை (Kuligai)</span>
+                                        <span className="font-bold text-red-700 dark:text-red-400 text-right">{panchangam?.kuligai || "N/A"}</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold mb-1 sm:mb-0">சூலம் (Soolam)</span>
+                                        <span className="font-medium text-foreground text-right">{panchangam?.soolam || "N/A"}</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold mb-1 sm:mb-0">பரிகாரம் (Parigaram)</span>
+                                        <span className="font-medium text-foreground text-right">{panchangam?.parigaram || "N/A"}</span>
                                     </div>
                                 </div>
-                            </div>
 
-                            {/* Nalla Neram */}
-                            <div>
-                                <h3 className="text-lg font-bold text-maroon-900 dark:text-maroon-100 flex items-center gap-2 border-b border-maroon-100 dark:border-maroon-900/50 pb-3 mb-4">
-                                    <Calendar className="h-5 w-5 text-maroon-500" />
-                                    Today Nalla Neram
-                                </h3>
+                                {/* Right Column */}
                                 <div className="space-y-4">
-                                    <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-800">
-                                        <span className="text-foreground/70 font-medium">Nalla Neram</span>
-                                        <span className="font-semibold text-green-700 dark:text-green-400">{panchangam?.nallaNeram || "N/A"}</span>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold text-sm mb-1 sm:mb-0">சூரிய உதயம் (Sun Rise)</span>
+                                        <span className="font-medium text-foreground text-right text-sm">06:28 AM (Approx)</span>
                                     </div>
-                                    <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-800">
-                                        <span className="text-foreground/70 font-medium">Gowri Nalla Neram</span>
-                                        <span className="font-semibold text-green-700 dark:text-green-400">{panchangam?.gowriNallaNeram || "N/A"}</span>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold text-sm mb-1 sm:mb-0">சந்திராஷ்டமம் (Chandirashtamam)</span>
+                                        <span className="font-medium text-foreground text-right text-sm">Check Local Almanac</span>
                                     </div>
-                                    <div className="flex justify-between items-center py-2 border-b border-gray-100 dark:border-gray-800">
-                                        <span className="text-foreground/70 font-medium">Rahu Kalam</span>
-                                        <span className="font-semibold text-red-700 dark:text-red-400">{panchangam?.rahuKalam || "N/A"}</span>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold text-sm mb-1 sm:mb-0">நாள் (Naal)</span>
+                                        <span className="font-medium text-foreground text-right text-sm">Check Local Almanac</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold text-sm mb-1 sm:mb-0">லக்னம் (Lagnam)</span>
+                                        <span className="font-medium text-foreground text-right text-sm">Check Local Almanac</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold text-sm mb-1 sm:mb-0">திதி (Thithi)</span>
+                                        <span className="font-medium text-foreground text-right text-sm text-balance max-w-[200px]">Check Local Almanac</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold text-sm mb-1 sm:mb-0">நட்சத்திரம் (Star)</span>
+                                        <span className="font-medium text-foreground text-right text-sm text-balance max-w-[200px]">Check Local Almanac</span>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row sm:justify-between py-3 border-b border-maroon-50 dark:border-maroon-900/30">
+                                        <span className="text-maroon-600 dark:text-gold-400 font-semibold text-sm mb-1 sm:mb-0">சுபகாரியம் (Subakariyam)</span>
+                                        <span className="font-medium text-foreground text-right text-sm text-balance max-w-[200px]">Check Local Almanac</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* Rasi Palan Links Section */}
+                <div className="bg-gradient-to-br from-maroon-50 to-white dark:from-maroon-900/40 dark:to-maroon-900/10 rounded-2xl shadow-sm border border-maroon-100 dark:border-maroon-800 p-6 md:p-8 mb-8">
+                    <h3 className="text-xl font-bold font-tamil text-maroon-900 dark:text-maroon-100 mb-6 flex items-center gap-2">
+                        <Star className="h-5 w-5 text-gold-500" />
+                        Tamil Rasi Palan : தமிழ் ராசி பலன்
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {[
+                            { en: "Daily Rasi Palan", ta: "இன்றைய ராசி பலன்", href: "#" },
+                            { en: "Weekly Rasi Palan", ta: "வார ராசி பலன்", href: "#" },
+                            { en: "Monthly Rasi Palan", ta: "மாத ராசி பலன்", href: "#" },
+                            { en: "Yearly Rasi Palan", ta: "ஆண்டு ராசி பலன்", href: "#" },
+                            { en: "Guru Peyarchi Palan", ta: "குரு பெயர்ச்சி பலன்", href: "#" },
+                            { en: "Raagu Kethu Peyarchi Palan", ta: "ராகு கேது பெயர்ச்சி பலன்", href: "#" },
+                            { en: "Sani Peyarchi Palan", ta: "சனி பெயர்ச்சி பலன்", href: "#" },
+                            { en: "Spiritual Audio CDs", ta: "ஆன்மீக இசை சிடிக்கள்", href: "#" },
+                        ].map((link, idx) => (
+                            <Link
+                                key={idx}
+                                href={link.href}
+                                className="group flex flex-col justify-center p-4 rounded-xl bg-white dark:bg-maroon-900/40 border border-maroon-100 dark:border-maroon-800 hover:border-maroon-300 dark:hover:border-maroon-600 hover:shadow-md transition-all"
+                            >
+                                <span className="text-sm text-maroon-600 dark:text-gold-400 font-semibold mb-1 group-hover:text-maroon-800 dark:group-hover:text-gold-300 transition-colors">{link.en}</span>
+                                <span className="text-base font-bold text-foreground font-tamil">{link.ta}</span>
+                            </Link>
+                        ))}
                     </div>
                 </div>
 

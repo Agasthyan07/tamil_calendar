@@ -5,6 +5,8 @@ export type PanchangamDayData = {
     kuligai: string;
     nallaNeram: string;
     gowriNallaNeram: string;
+    soolam: string;
+    parigaram: string;
 };
 
 const panchangamData: Record<string, PanchangamDayData> = {
@@ -14,7 +16,9 @@ const panchangamData: Record<string, PanchangamDayData> = {
         yamagandam: "12:00 PM - 1:30 PM",
         kuligai: "3:00 PM - 4:30 PM",
         nallaNeram: "7:30 AM - 8:30 AM",
-        gowriNallaNeram: "2:30 PM - 3:30 PM"
+        gowriNallaNeram: "2:30 PM - 3:30 PM",
+        soolam: "மேற்கு (West)",
+        parigaram: "வெல்லம் (Jaggery)"
     },
     "Monday": {
         dayOfWeek: "Monday",
@@ -22,7 +26,9 @@ const panchangamData: Record<string, PanchangamDayData> = {
         yamagandam: "10:30 AM - 12:00 PM",
         kuligai: "1:30 PM - 3:00 PM",
         nallaNeram: "6:30 AM - 7:30 AM",
-        gowriNallaNeram: "4:30 PM - 5:30 PM"
+        gowriNallaNeram: "4:30 PM - 5:30 PM",
+        soolam: "கிழக்கு (East)",
+        parigaram: "தயிர் (Curd)"
     },
     "Tuesday": {
         dayOfWeek: "Tuesday",
@@ -30,7 +36,9 @@ const panchangamData: Record<string, PanchangamDayData> = {
         yamagandam: "9:00 AM - 10:30 AM",
         kuligai: "12:00 PM - 1:30 PM",
         nallaNeram: "10:30 AM - 11:30 AM",
-        gowriNallaNeram: "12:00 PM - 1:00 PM"
+        gowriNallaNeram: "12:00 PM - 1:00 PM",
+        soolam: "வடக்கு (North)",
+        parigaram: "பால் (Milk)"
     },
     "Wednesday": {
         dayOfWeek: "Wednesday",
@@ -38,7 +46,9 @@ const panchangamData: Record<string, PanchangamDayData> = {
         yamagandam: "7:30 AM - 9:00 AM",
         kuligai: "10:30 AM - 12:00 PM",
         nallaNeram: "9:30 AM - 10:30 AM",
-        gowriNallaNeram: "6:30 PM - 7:30 PM"
+        gowriNallaNeram: "6:30 PM - 7:30 PM",
+        soolam: "வடக்கு (North)",
+        parigaram: "பால் (Milk)"
     },
     "Thursday": {
         dayOfWeek: "Thursday",
@@ -46,7 +56,9 @@ const panchangamData: Record<string, PanchangamDayData> = {
         yamagandam: "6:00 AM - 7:30 AM",
         kuligai: "9:00 AM - 10:30 AM",
         nallaNeram: "10:30 AM - 11:30 AM",
-        gowriNallaNeram: "12:00 PM - 1:00 PM"
+        gowriNallaNeram: "12:00 PM - 1:00 PM",
+        soolam: "தெற்கு (South)",
+        parigaram: "தைலம் (Oil)"
     },
     "Friday": {
         dayOfWeek: "Friday",
@@ -54,7 +66,9 @@ const panchangamData: Record<string, PanchangamDayData> = {
         yamagandam: "3:00 PM - 4:30 PM",
         kuligai: "7:30 AM - 9:00 AM",
         nallaNeram: "6:30 AM - 7:30 AM & 1:00 PM - 2:00 PM",
-        gowriNallaNeram: "4:00 PM - 5:00 PM"
+        gowriNallaNeram: "4:00 PM - 5:00 PM",
+        soolam: "மேற்கு (West)",
+        parigaram: "வெல்லம் (Jaggery)"
     },
     "Saturday": {
         dayOfWeek: "Saturday",
@@ -62,9 +76,12 @@ const panchangamData: Record<string, PanchangamDayData> = {
         yamagandam: "1:30 PM - 3:00 PM",
         kuligai: "6:00 AM - 7:30 AM",
         nallaNeram: "7:30 AM - 8:30 AM",
-        gowriNallaNeram: "1:30 PM - 2:30 PM"
+        gowriNallaNeram: "1:30 PM - 2:30 PM",
+        soolam: "தெற்கு (South)",
+        parigaram: "தைலம் (Oil)"
     }
 };
+
 
 /**
  * Returns the fixed standard timings for everyday based on Day of Week.
